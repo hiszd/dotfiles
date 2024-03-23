@@ -8,13 +8,12 @@
       postgresql
       nodejs
       nodePackages_latest.npm
+      nodePackages_latest.typescript-language-server
       bun
       esbuild
     ];
-    buildInputs = with pkgs; [
-      systemd
-      stdenv.cc.libc
-    ];
+    # buildInputs = with pkgs; [
+    # ];
 
     shellHook = ''
       export XDG_RUNTIME_DIR=/run/user/$(id -u)
