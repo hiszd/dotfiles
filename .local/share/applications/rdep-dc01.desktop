@@ -1,0 +1,5 @@
+[Desktop Entry]
+Version=1.0
+Type=Application
+Exec=csi-rem 10.1.1.64
+Name=CSI-DC01
