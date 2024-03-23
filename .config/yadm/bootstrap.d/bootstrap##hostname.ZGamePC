@@ -1,0 +1,13 @@
+#!/bin/sh
+
+cd $HOME/.config/
+
+git clone https://github.com/hiszd/.dot-files-nvim -b nix nvim
+git clone https://github.com/hiszd/.dot-files-fish -b nix fish
+git clone https://github.com/hiszd/.dot-files-wofi -b main wofi
+git clone https://github.com/hiszd/.dot-files-hypr -b home hypr
+git clone https://github.com/hiszd/.dot-files-hyprswitch -b home hyprswitch
+git clone https://github.com/hiszd/.dot-files-tmuxinator -b main tmuxinator
+git clone https://github.com/hiszd/.dot-files-eww -b main eww
+git clone https://github.com/hiszd/.dot-files-gtklock -b main gtklock
+git clone https://github.com/hiszd/.dot-files-eww -b nix eww
