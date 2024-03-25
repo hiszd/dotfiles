@@ -1,12 +1,14 @@
-#!/bin/sh
+#!/usr/bin/env bash
 
-$path = $HOME/.config/
+path=$HOME/.config
+
+echo $path
 
 mkdir $path/hyprswitch-temp
 cp $path/hyprswitch/*.json $path/hyprswitch-temp/
 cp $path/hyprswitch/*.json.new $path/hyprswitch-temp/
-sudo rm -r hyprswitch
-git clone https://github.com/hiszd/.dot-files-hyprswitch -b home hyprswitch
+sudo rm -r $path/hyprswitch
+git clone https://github.com/hiszd/.dot-files-hyprswitch -b home $path/hyprswitch
 cp $path/hyprswitch-temp/*.json $path/hyprswitch/
 cp $path/hyprswitch-temp/*.json.new $path/hyprswitch/
 sudo rm -r $path/hyprswitch-temp
@@ -25,3 +27,5 @@ sudo rm -r $path/eww
 git clone https://github.com/hiszd/.dot-files-eww -b main $path/eww
 sudo rm -r $path/gtklock
 git clone https://github.com/hiszd/.dot-files-gtklock -b main $path/gtklock
+sudo rm -r $path/kitty
+git clone https://github.com/hiszd/.dot-files-kitty -b main $path/kitty
