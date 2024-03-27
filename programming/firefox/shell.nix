@@ -4,7 +4,8 @@
     nativeBuildInputs = with pkgs; [
       pkg-config
       openssl
-      nodejs
+      libevdev
+      nodejs_latest
       nodePackages_latest.npm
       nodePackages_latest.typescript-language-server
     ];

@@ -1,0 +1,22 @@
+#!/usr/bin/env bash
+
+path=$HOME/.config
+
+echo $path
+
+sudo rm -r $path/nvim
+git clone https://github.com/hiszd/.dot-files-nvim -b nix $path/nvim
+sudo rm -r $path/fish
+git clone https://github.com/hiszd/.dot-files-fish -b nix $path/fish
+sudo rm -r $path/wofi
+git clone https://github.com/hiszd/.dot-files-wofi -b main $path/wofi
+sudo rm -r $path/hypr
+git clone https://github.com/hiszd/.dot-files-hypr -b work $path/hypr
+sudo rm -r $path/tmuxinator
+git clone https://github.com/hiszd/.dot-files-tmuxinator -b main $path/tmuxinator
+sudo rm -r $path/eww
+git clone https://github.com/hiszd/.dot-files-eww -b main $path/eww
+sudo rm -r $path/gtklock
+git clone https://github.com/hiszd/.dot-files-gtklock -b main $path/gtklock
+sudo rm -r $path/kitty
+git clone https://github.com/hiszd/.dot-files-kitty -b main $path/kitty
