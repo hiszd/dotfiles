@@ -1,0 +1,104 @@
+[
+  {
+    "mons": "eDP-1,DP-3,HDMI-A-1",
+    "cmds": [
+      "eww close-all",
+      "hyprctl keyword monitor ${mons3},highrr,0x1080,1",
+      "hyprctl keyword monitor ${mons2},highrr,1920x0,1",
+      "hyprctl keyword monitor ${mons1},highrr,1920x1080,1.6",
+      "hyprctl keyword workspace 9,monitor:${mons3},default:true",
+      "hyprctl keyword workspace 1,monitor:${mons2},default:true",
+      "hyprctl keyword workspace 6,monitor:${mons1},default:true",
+      "hyprctl keyword workspace 2,monitor:${mons2}",
+      "hyprctl keyword workspace 3,monitor:${mons2}",
+      "hyprctl keyword workspace 4,monitor:${mons2}",
+      "hyprctl keyword workspace 5,monitor:${mons2}",
+      "hyprctl keyword workspace 7,monitor:${mons1}",
+      "hyprctl keyword workspace 8,monitor:${mons1}",
+      "hyprctl keyword workspace 9,monitor:${mons3}",
+      "hyprctl keyword workspace 0,monitor:${mons3}",
+      "eww open-many bar0 bar1 bar2"
+    ]
+  },
+  {
+    "mons": "eDP-1,DP-3",
+    "cmds": [
+      "eww close-all",
+      "hyprctl keyword monitor ${mons1},highres,0x1080,1.6",
+      "hyprctl keyword monitor ${mons2},highrr,0x0,1",
+      "hyprctl keyword workspace 6,monitor:${mons1},default:true",
+      "hyprctl keyword workspace 1,monitor:${mons2},default:true",
+      "hyprctl keyword workspace 2,monitor:${mons2}",
+      "hyprctl keyword workspace 3,monitor:${mons2}",
+      "hyprctl keyword workspace 4,monitor:${mons2}",
+      "hyprctl keyword workspace 5,monitor:${mons2}",
+      "hyprctl keyword workspace 7,monitor:${mons1}",
+      "hyprctl keyword workspace 8,monitor:${mons1}",
+      "hyprctl keyword workspace 9,monitor:${mons1}",
+      "eww open-many bar0 bar1"
+    ]
+  },
+  {
+    "mons": "eDP-1,DP-1",
+    "cmds": [
+      "eww close-all",
+      "hyprctl keyword monitor ${mons1},highres,0x0,1.6",
+      "hyprctl keyword monitor ${mons2},highrr,1705x0,1",
+      "hyprctl keyword workspace 6,monitor:${mons1},default:true",
+      "hyprctl keyword workspace 1,monitor:${mons2},default:true",
+      "hyprctl keyword workspace 2,monitor:${mons2}",
+      "hyprctl keyword workspace 3,monitor:${mons2}",
+      "hyprctl keyword workspace 4,monitor:${mons2}",
+      "hyprctl keyword workspace 5,monitor:${mons2}",
+      "hyprctl keyword workspace 7,monitor:${mons1}",
+      "hyprctl keyword workspace 8,monitor:${mons1}",
+      "hyprctl keyword workspace 9,monitor:${mons1}",
+      "eww open-many bar0 bar1"
+    ]
+  },
+  {
+    "mons": "eDP-1,DP-5",
+    "cmds": [
+      "eww close-all",
+      "hyprctl keyword monitor ${mons1},highres,0x0,1.6",
+      "hyprctl keyword monitor ${mons2},highrr,1600x0,1",
+      "hyprctl keyword workspace 6,monitor:${mons1},default:true",
+      "hyprctl keyword workspace 1,monitor:${mons2},default:true",
+      "hyprctl keyword workspace 2,monitor:${mons2}",
+      "hyprctl keyword workspace 3,monitor:${mons2}",
+      "hyprctl keyword workspace 4,monitor:${mons2}",
+      "hyprctl keyword workspace 5,monitor:${mons2}",
+      "hyprctl keyword workspace 7,monitor:${mons1}",
+      "hyprctl keyword workspace 8,monitor:${mons1}",
+      "hyprctl keyword workspace 9,monitor:${mons1}",
+      "eww open-many bar0 bar1"
+    ]
+  },
+  {
+    "mons": "eDP-1,HDMI-A-1",
+    "cmds": [
+      "eww close-all",
+      "hyprctl keyword monitor ${mons1},highres,0x1440,1.6",
+      "hyprctl keyword monitor ${mons2},2560x1440,0x0,1",
+      "hyprctl keyword workspace 1,monitor:${mons2},default:true",
+      "hyprctl keyword workspace 6,monitor:${mons1},default:true",
+      "hyprctl keyword workspace 2,monitor:${mons2}",
+      "hyprctl keyword workspace 3,monitor:${mons2}",
+      "hyprctl keyword workspace 4,monitor:${mons2}",
+      "hyprctl keyword workspace 5,monitor:${mons2}",
+      "hyprctl keyword workspace 7,monitor:${mons1}",
+      "hyprctl keyword workspace 8,monitor:${mons1}",
+      "hyprctl keyword workspace 9,monitor:${mons1}",
+      "eww open-many bar0 bar1"
+    ]
+  },
+  {
+    "mons": "eDP-1",
+    "cmds": [
+      "eww close-all",
+      "hyprctl keyword monitor ${mons1},highrr,0x0,1.6",
+      "sleep 0.2",
+      "eww open bar0"
+    ]
+  }
+]

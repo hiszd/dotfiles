@@ -4,15 +4,6 @@ path=$HOME/.config
 
 echo $path
 
-mkdir $path/hyprswitch-temp
-cp $path/hyprswitch/*.json $path/hyprswitch-temp/
-cp $path/hyprswitch/*.json.new $path/hyprswitch-temp/
-sudo rm -r $path/hyprswitch
-git clone https://github.com/hiszd/.dot-files-hyprswitch -b home $path/hyprswitch
-cp $path/hyprswitch-temp/*.json $path/hyprswitch/
-cp $path/hyprswitch-temp/*.json.new $path/hyprswitch/
-sudo rm -r $path/hyprswitch-temp
-
 sudo rm -r $path/nvim
 git clone https://github.com/hiszd/.dot-files-nvim -b nix $path/nvim
 sudo rm -r $path/fish
