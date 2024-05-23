@@ -75,7 +75,9 @@
         "hyprctl keyword workspace 7,monitor:${mons1}",
         "hyprctl keyword workspace 8,monitor:${mons1}",
         "hyprctl keyword workspace 9,monitor:${mons1}",
-        "eww open-many bar0 bar1"
+        "eww open-many bar0 bar1",
+        "hyprctl dispatch workspace 6",
+        "hyprctl dispatch workspace 3"
       ]
     },
     {

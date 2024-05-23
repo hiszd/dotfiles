@@ -4,7 +4,6 @@
     nativeBuildInputs = with pkgs; [
       pkg-config
       openssl
-      capnproto
       xorg.libX11
       xorg.libXtst
       xorg.libxcb
@@ -14,16 +13,19 @@
       llvmPackages.libclang
       cmake
       libxkbcommon
-      qt5.full
+      zig
+      zls
     ];
     buildInputs = with pkgs; [
+      libpqxx
       systemd
       stdenv.cc.libc
     ];
 
-    XDG_RUNTIME_DIR="/run/user/$(id -u)";
     # why do we need to set the library path manually?
     shellHook = ''
+      export XDG_RUNTIME_DIR=/run/user/$(id -u)
       export LIBCLANG_PATH="${pkgs.llvmPackages.libclang.lib}/lib";
+      export XDG_RUNTIME_DIR="/run/user/$(id -u)";
     '';
 }
