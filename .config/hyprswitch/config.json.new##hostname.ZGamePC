@@ -1,0 +1,11 @@
+{
+  "actions": [
+    {
+      "mons": "DP-3",
+      "cmds": [
+        "eww close-all",
+        "eww open bar0"
+      ]
+    }
+  ]
+}
