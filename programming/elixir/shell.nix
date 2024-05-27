@@ -4,6 +4,7 @@
     nativeBuildInputs = with pkgs; [
     elixir
     elixir-ls
+    sqls
     nodePackages.typescript-language-server
     ];
     buildInputs = with pkgs; [
