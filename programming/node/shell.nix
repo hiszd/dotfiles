@@ -11,6 +11,7 @@
       nodePackages_latest.typescript-language-server
       bun
       esbuild
+      sqls
     ];
     # buildInputs = with pkgs; [
     # ];
