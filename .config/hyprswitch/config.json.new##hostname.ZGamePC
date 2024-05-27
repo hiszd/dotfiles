@@ -1,9 +1,14 @@
 {
+  "aliases": [
+    "main:serial=CC2H423400262"
+  ],
   "actions": [
     {
-      "mons": "DP-3",
+      "mons": "main, Unknown-1",
       "cmds": [
         "eww close-all",
+        "hyprctl keyword monitor ${mons1},highrr,0x0,1",
+        "hyprctl keyword monitor ${mons2},disable",
         "eww open bar0"
       ]
     }
