@@ -5,6 +5,7 @@
     elixir
     elixir-ls
     sqls
+    nodejs_latest
     nodePackages.typescript-language-server
     ];
     buildInputs = with pkgs; [
