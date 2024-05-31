@@ -4,7 +4,7 @@
   ],
   "actions": [
     {
-      "mons": "main, Unknown-1",
+      "mons": "main,Unknown-1",
       "cmds": [
         "eww close-all",
         "hyprctl keyword monitor ${mons1},highrr,0x0,1",
