@@ -1,0 +1,45 @@
+{
+  "aliases": [
+    "bob:model=G274QPX"
+  ],
+  "actions": [
+    {
+      "mons": "eDP-1,bob",
+      "cmds": [
+        "eww close-all",
+        "hyprctl keyword monitor ${mons2},2560x1440@144,0x1920,1",
+        "hyprctl keyword monitor ${mons1},highrr,1.5",
+        "hyprctl keyword workspace 1,monitor:${mons2},default:true",
+        "hyprctl keyword workspace 6,monitor:${mons1},default:true",
+        "hyprctl keyword workspace 2,monitor:${mons2}",
+        "hyprctl keyword workspace 3,monitor:${mons2}",
+        "hyprctl keyword workspace 4,monitor:${mons2}",
+        "hyprctl keyword workspace 5,monitor:${mons2}",
+        "hyprctl keyword workspace 7,monitor:${mons1}",
+        "hyprctl keyword workspace 8,monitor:${mons1}",
+        "hyprctl keyword workspace 9,monitor:${mons3}",
+        "hyprctl keyword workspace 0,monitor:${mons3}",
+        "eww open-many bar0 bar1"
+      ]
+    },
+    {
+      "mons": "eDP-1",
+      "cmds": [
+        "eww close-all",
+        "hyprctl keyword monitor ${mons1},highrr,1.5",
+        "hyprctl keyword workspace 1,monitor:${mons1},default:true",
+        "hyprctl keyword moveworkspacetomonitor 2 ${mons1}",
+        "hyprctl keyword moveworkspacetomonitor 3 ${mons1}",
+        "hyprctl keyword moveworkspacetomonitor 4 ${mons1}",
+        "hyprctl keyword moveworkspacetomonitor 5 ${mons1}",
+        "hyprctl keyword moveworkspacetomonitor 6 ${mons1}",
+        "hyprctl keyword moveworkspacetomonitor 7 ${mons1}",
+        "hyprctl keyword moveworkspacetomonitor 8 ${mons1}",
+        "hyprctl keyword moveworkspacetomonitor 9 ${mons1}",
+        "hyprctl keyword moveworkspacetomonitor 10 ${mons1}",
+        "hyprctl keyword workspace 3",
+        "eww open-many bar0"
+      ]
+    }
+  ]
+}
