@@ -1,0 +1,12 @@
+#!/usr/bin/env bash
+
+path=$HOME/.config
+
+echo $path
+
+sudo rm -r $path/nvim
+git clone https://github.com/hiszd/.dot-files-nvim -b nix $path/nvim
+sudo rm -r $path/fish
+git clone https://github.com/hiszd/.dot-files-fish -b nix $path/fish
+sudo rm -r $path/tmuxinator
+git clone https://github.com/hiszd/.dot-files-tmuxinator -b main $path/tmuxinator
