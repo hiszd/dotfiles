@@ -1,33 +1,49 @@
 {
   "aliases": [
-    "work:model=VG275",
-    "home:model=ffffff"
+    "work:model=DELL S2725QC",
+    "home:serial=CC2H423400262"
   ],
   "actions": [
     {
       "mons": "work, eDP-1",
       "cmds": [
-        "hyprctl --batch \"keyword monitorv2[${mons1}]:mode preferred; keyword monitorv2[${mons1}]:position 0x0; keyword monitorv2[${mons1}]:scale 1\"",
         "hyprctl --batch \"keyword monitorv2[${mons2}]:mode 2880x1920@120; keyword monitorv2[${mons2}]:position auto-right; keyword monitorv2[${mons2}]:scale 2\"",
-        "hyprctl --batch \"dispatch moveworkspacetomonitor 1 ${mons1}; dispatch moveworkspacetomonitor 2 ${mons1}; dispatch moveworkspacetomonitor 3 ${mons1}; dispatch moveworkspacetomonitor 4 ${mons1}; dispatch moveworkspacetomonitor 5 ${mons1}; keyword workspace 1,monitor:${mons1},default:true; keyword workspace 2,monitor:${mons1}; keyword workspace 3,monitor:${mons1}; keyword workspace 4,monitor:${mons1}; keyword workspace 5,monitor:${mons1}\"",
-        "hyprctl --batch \"dispatch moveworkspacetomonitor 6 ${mons2}; dispatch moveworkspacetomonitor 7 ${mons2}; dispatch moveworkspacetomonitor 8 ${mons2}; dispatch moveworkspacetomonitor 9 ${mons2}; dispatch moveworkspacetomonitor 10 ${mons2}; keyword workspace 6,monitor:${mons2},default:true; keyword workspace 7,monitor:${mons2}; keyword workspace 8,monitor:${mons2}; keyword workspace 9,monitor:${mons2}; keyword workspace 10,monitor:${mons2}\""
+        "hyprctl --batch \"keyword monitorv2[${mons1}]:mode preferred; keyword monitorv2[${mons1}]:position 0x0; keyword monitorv2[${mons1}]:scale 1.67\"",
+        "hyprctl --batch \"keyword workspace 1,monitor:${mons1},default:true; keyword workspace 2,monitor:${mons1}; keyword workspace 3,monitor:${mons1}; keyword workspace 4,monitor:${mons1}; keyword workspace 5,monitor:${mons1}; dispatch moveworkspacetomonitor 1 ${mons1}; dispatch moveworkspacetomonitor 2 ${mons1}; dispatch moveworkspacetomonitor 3 ${mons1}; dispatch moveworkspacetomonitor 4 ${mons1}; dispatch moveworkspacetomonitor 5 ${mons1};\"",
+        "hyprctl --batch \"keyword workspace 6,monitor:${mons2},default:true; keyword workspace 7,monitor:${mons2}; keyword workspace 8,monitor:${mons2}; keyword workspace 9,monitor:${mons2}; keyword workspace 10,monitor:${mons2};dispatch moveworkspacetomonitor 6 ${mons2}; dispatch moveworkspacetomonitor 7 ${mons2}; dispatch moveworkspacetomonitor 8 ${mons2}; dispatch moveworkspacetomonitor 9 ${mons2}; dispatch moveworkspacetomonitor 10 ${mons2};\""
       ]
     },
     {
       "mons": "home, eDP-1",
       "cmds": [
-        "hyprctl --batch \"keyword monitorv2[${mons1}]:mode preferred; keyword monitorv2[${mons1}]:position 0x0; keyword monitorv2[${mons1}]:scale 1\"",
-        "hyprctl --batch \"keyword monitorv2[${mons2}]:mode 2880x1920@120; keyword monitorv2[${mons2}]:position auto-center-left; keyword monitorv2[${mons2}]:scale 1\"",
-        "hyprctl --batch \"dispatch moveworkspacetomonitor 1 ${mons1}; dispatch moveworkspacetomonitor 2 ${mons1}; dispatch moveworkspacetomonitor 3 ${mons1}; dispatch moveworkspacetomonitor 4 ${mons1}; dispatch moveworkspacetomonitor 5 ${mons1}; keyword workspace 1,monitor:${mons1},default:true; keyword workspace 2,monitor:${mons1}; keyword workspace 3,monitor:${mons1}; keyword workspace 4,monitor:${mons1}; keyword workspace 5,monitor:${mons1}\"",
-        "hyprctl --batch \"dispatch moveworkspacetomonitor 6 ${mons2}; dispatch moveworkspacetomonitor 7 ${mons2}; dispatch moveworkspacetomonitor 8 ${mons2}; dispatch moveworkspacetomonitor 9 ${mons2}; dispatch moveworkspacetomonitor 10 ${mons2}; keyword workspace 6,monitor:${mons2},default:true; keyword workspace 7,monitor:${mons2}; keyword workspace 8,monitor:${mons2}; keyword workspace 9,monitor:${mons2}; keyword workspace 10,monitor:${mons2}\""
+        "hyprctl --batch \"keyword monitorv2[${mons2}]:mode 2880x1920@120; keyword monitorv2[${mons2}]:position auto-left; keyword monitorv2[${mons2}]:scale 2; keyword monitorv2[${mons2}]:disabled false\"",
+        "hyprctl --batch \"keyword monitorv2[${mons1}]:mode highrr; keyword monitorv2[${mons1}]:position 0x0; keyword monitorv2[${mons1}]:scale 1;\"",
+        "hyprctl --batch \"keyword workspace 1,monitor:${mons1},default:true; keyword workspace 2,monitor:${mons1}; keyword workspace 3,monitor:${mons1}; keyword workspace 4,monitor:${mons1}; keyword workspace 5,monitor:${mons1}; dispatch moveworkspacetomonitor 1 ${mons1}; dispatch moveworkspacetomonitor 2 ${mons1}; dispatch moveworkspacetomonitor 3 ${mons1}; dispatch moveworkspacetomonitor 4 ${mons1}; dispatch moveworkspacetomonitor 5 ${mons1};\"",
+        "hyprctl --batch \"keyword workspace 6,monitor:${mons2},default:true; keyword workspace 7,monitor:${mons2}; keyword workspace 8,monitor:${mons2}; keyword workspace 9,monitor:${mons2}; keyword workspace 10,monitor:${mons2}; dispatch moveworkspacetomonitor 6 ${mons2}; dispatch moveworkspacetomonitor 7 ${mons2}; dispatch moveworkspacetomonitor 8 ${mons2}; dispatch moveworkspacetomonitor 9 ${mons2}; dispatch moveworkspacetomonitor 10 ${mons2};\""
       ]
     },
     {
       "mons": "eDP-1",
       "cmds": [
-        "hyprctl --batch \"keyword monitorv2[${mons1}]:mode 2880x1920@120; keyword monitorv2[${mons1}]:position 0x0; keyword monitorv2[${mons1}]:scale 1\"",
-        "hyprctl --batch \"dispatch moveworkspacetomonitor 1 ${mons1}; dispatch moveworkspacetomonitor 2 ${mons1}; dispatch moveworkspacetomonitor 3 ${mons1}; dispatch moveworkspacetomonitor 4 ${mons1}; dispatch moveworkspacetomonitor 5 ${mons1}; keyword workspace 1,monitor:${mons1},default:true; keyword workspace 2,monitor:${mons1}; keyword workspace 3,monitor:${mons1}; keyword workspace 4,monitor:${mons1}; keyword workspace 5,monitor:${mons1}\"",
-        "hyprctl --batch \"dispatch moveworkspacetomonitor 6 ${mons1}; dispatch moveworkspacetomonitor 7 ${mons1}; dispatch moveworkspacetomonitor 8 ${mons1}; dispatch moveworkspacetomonitor 9 ${mons1}; dispatch moveworkspacetomonitor 10 ${mons1}; keyword workspace 6,monitor:${mons1},default:true; keyword workspace 7,monitor:${mons1}; keyword workspace 8,monitor:${mons1}; keyword workspace 9,monitor:${mons1}; keyword workspace 10,monitor:${mons1}\""
+        "hyprctl --batch \"keyword monitorv2[${mons1}]:mode 2880x1920@120; keyword monitorv2[${mons1}]:position 0x0; keyword monitorv2[${mons1}]:scale 2\"",
+        "hyprctl --batch \"keyword workspace 1,monitor:${mons1},default:true; keyword workspace 2,monitor:${mons1}; keyword workspace 3,monitor:${mons1}; keyword workspace 4,monitor:${mons1}; keyword workspace 5,monitor:${mons1}; dispatch moveworkspacetomonitor 1 ${mons1}; dispatch moveworkspacetomonitor 2 ${mons1}; dispatch moveworkspacetomonitor 3 ${mons1}; dispatch moveworkspacetomonitor 4 ${mons1}; dispatch moveworkspacetomonitor 5 ${mons1};\"",
+        "hyprctl --batch \"keyword workspace 6,monitor:${mons1},default:true; keyword workspace 7,monitor:${mons1}; keyword workspace 8,monitor:${mons1}; keyword workspace 9,monitor:${mons1}; keyword workspace 10,monitor:${mons1}; dispatch moveworkspacetomonitor 6 ${mons1}; dispatch moveworkspacetomonitor 7 ${mons1}; dispatch moveworkspacetomonitor 8 ${mons1}; dispatch moveworkspacetomonitor 9 ${mons1}; dispatch moveworkspacetomonitor 10 ${mons1};\""
+      ]
+    },
+    {
+      "mons": "work",
+      "cmds": [
+        "hyprctl --batch \"keyword monitorv2[${mons1}]:mode preferred; keyword monitorv2[${mons1}]:position 0x0; keyword monitorv2[${mons1}]:scale 1\"",
+        "hyprctl --batch \"keyword workspace 1,monitor:${mons1},default:true; keyword workspace 2,monitor:${mons1}; keyword workspace 3,monitor:${mons1}; keyword workspace 4,monitor:${mons1}; keyword workspace 5,monitor:${mons1}; dispatch moveworkspacetomonitor 1 ${mons1}; dispatch moveworkspacetomonitor 2 ${mons1}; dispatch moveworkspacetomonitor 3 ${mons1}; dispatch moveworkspacetomonitor 4 ${mons1}; dispatch moveworkspacetomonitor 5 ${mons1};\"",
+        "hyprctl --batch \"keyword workspace 6,monitor:${mons1},default:true; keyword workspace 7,monitor:${mons1}; keyword workspace 8,monitor:${mons1}; keyword workspace 9,monitor:${mons1}; keyword workspace 10,monitor:${mons1}; dispatch moveworkspacetomonitor 6 ${mons1}; dispatch moveworkspacetomonitor 7 ${mons1}; dispatch moveworkspacetomonitor 8 ${mons1}; dispatch moveworkspacetomonitor 9 ${mons1}; dispatch moveworkspacetomonitor 10 ${mons1};\""
+      ]
+    },
+    {
+      "mons": "home",
+      "cmds": [
+        "hyprctl --batch \"keyword monitorv2[${mons1}]:mode highrr; keyword monitorv2[${mons1}]:position 0x0; keyword monitorv2[${mons1}]:scale 1\"",
+        "hyprctl --batch \"keyword workspace 1,monitor:${mons1},default:true; keyword workspace 2,monitor:${mons1}; keyword workspace 3,monitor:${mons1}; keyword workspace 4,monitor:${mons1}; keyword workspace 5,monitor:${mons1}; dispatch moveworkspacetomonitor 1 ${mons1}; dispatch moveworkspacetomonitor 2 ${mons1}; dispatch moveworkspacetomonitor 3 ${mons1}; dispatch moveworkspacetomonitor 4 ${mons1}; dispatch moveworkspacetomonitor 5 ${mons1};\"",
+        "hyprctl --batch \"keyword workspace 6,monitor:${mons1},default:true; keyword workspace 7,monitor:${mons1}; keyword workspace 8,monitor:${mons1}; keyword workspace 9,monitor:${mons1}; keyword workspace 10,monitor:${mons1}; dispatch moveworkspacetomonitor 6 ${mons1}; dispatch moveworkspacetomonitor 7 ${mons1}; dispatch moveworkspacetomonitor 8 ${mons1}; dispatch moveworkspacetomonitor 9 ${mons1}; dispatch moveworkspacetomonitor 10 ${mons1};\""
       ]
     }
   ]
